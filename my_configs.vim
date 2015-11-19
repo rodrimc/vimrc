@@ -32,6 +32,7 @@ let g:NERDTreeWinPos= "left"
 "au VimEnter *  NERDTree
 set autochdir
 let NERDTreeChDirMode=2
+let NERDTreeIgnore = ['\.o$', '.~$']
 
 "Syntastic
 set statusline+=%#warningmsg#
