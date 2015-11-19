@@ -6,7 +6,7 @@ set colorcolumn=80
 "set cursorline cursorcolumn
 set cursorline
 set foldnestmax=1
-colors antares
+colors vendeta
 
 " Replace text in selection
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
