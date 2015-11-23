@@ -4,14 +4,14 @@ set shiftwidth=2
 set expandtab
 set colorcolumn=80
 "set cursorline cursorcolumn
-set cursorline
+"set cursorlineset foldnestmax=1
 set foldnestmax=1
-colors vendeta
+colors antares
 
 " Replace text in selection
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
-"Folding customization
+" Folding customization
 set foldmethod=syntax
 set nofoldenable
 set foldlevel=2
@@ -28,11 +28,11 @@ set laststatus=2
 set t_Co=256
 
 "NERDTree
-let g:NERDTreeWinPos= "left"
-"au VimEnter *  NERDTree
+" au VimEnter *  NERDTree
 set autochdir
 let NERDTreeChDirMode=2
-let NERDTreeIgnore = ['\.o$', '.~$']
+let NERDTreeIgnore=['\.o$', '\~$']
+let g:NERDTreeWinPos= "left"
 
 "Syntastic
 set statusline+=%#warningmsg#
