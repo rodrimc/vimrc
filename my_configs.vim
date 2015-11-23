@@ -4,9 +4,10 @@ set shiftwidth=2
 set expandtab
 set colorcolumn=80
 "set cursorline cursorcolumn
-"set cursorlineset foldnestmax=1
+"set cursorline
 set foldnestmax=1
-colors antares
+colors vendetta
+set term=xterm
 
 " Replace text in selection
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
