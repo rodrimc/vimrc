@@ -4,9 +4,10 @@ set shiftwidth=2
 set expandtab
 set colorcolumn=80
 "set cursorline cursorcolumn
-set cursorline
+"set cursorline
 set foldnestmax=1
-colors vendeta
+colors vendetta
+set term=xterm
 
 " Replace text in selection
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
@@ -32,7 +33,7 @@ let g:NERDTreeWinPos= "left"
 "au VimEnter *  NERDTree
 set autochdir
 let NERDTreeChDirMode=2
-let NERDTreeIgnore = ['\.o$', '.~$']
+let NERDTreeIgnore = ['\.o$']
 
 "Syntastic
 set statusline+=%#warningmsg#
