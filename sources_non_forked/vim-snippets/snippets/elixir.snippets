@@ -70,7 +70,7 @@ snippet defma
 		${0}
 	end
 snippet defmo
-	defmodule ${1:module_name} do
+	defmodule ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
 		${0}
 	end
 snippet defp
@@ -87,14 +87,12 @@ snippet doc
 	"""
 snippet fn
 	fn ${1:args} -> ${0} end
-snippet fun
-	function do
-		${0}
-	end
 snippet mdoc
 	@moduledoc """
 	${0}
 	"""
+snippet mdocf
+	@moduledoc false
 snippet rec
 	receive do
 		${1} ->
@@ -114,6 +112,12 @@ snippet testa
 	test "${1:test_name}", %{${2:arg: arg}} do
 		${0}
 	end
+snippet exunit
+	defmodule ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
+		use ExUnit.Case, async: true
+
+		${0}
+	end
 snippet try try .. rescue .. end
 	try do
 		${1}
@@ -122,4 +126,11 @@ snippet try try .. rescue .. end
 	end
 snippet pry
 	require IEx; IEx.pry
+	${0}
+snippet qu
+	quote do
+		${1}
+	end
+snippet beh
+	@behaviour ${1:Mix.Task}
 	${0}
