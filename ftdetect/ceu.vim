@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.ceu set filetype=ceu
+au BufNewFile,BufRead *.ceu set filetype=ceu

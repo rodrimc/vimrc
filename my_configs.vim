@@ -61,3 +61,8 @@ set tags=tags;/
 " TagList
 nnoremap <F8> :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
+
+" LatexBox
+let g:LatexBox_quickfix = 3
+let g:LatexBox_show_warnings = 0
+
